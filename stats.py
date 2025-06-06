@@ -19,3 +19,12 @@ def get_book_text(file_path):
     with open(file_path) as f:
         file_contents = f.read()
     return file_contents
+
+
+def sort_on(dict_items):
+    return dict_items[1]
+
+
+def sort_dict(freq_dict):
+    sorted_dict = dict(sorted(freq_dict.items(), key=sort_on, reverse=True))
+    return sorted_dict
