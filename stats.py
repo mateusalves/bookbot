@@ -9,7 +9,7 @@ def get_char_frequency(file_contents):
     return char_freq
 
 
-def get_num_words(file_contents):
+def print_num_words(file_contents):
     words = file_contents.split()
     num_words = len(words)
     print(f"Found {num_words} total words")
