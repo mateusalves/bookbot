@@ -1,11 +1,6 @@
 import sys
-from stats import print_num_words, get_book_text, get_char_frequency, sort_dict
-
-
-def print_characters(sorted_dict):
-    for k, v in sorted_dict.items():
-        if k.isalpha():
-            print(f"{k}: {v}")
+from stats import get_book_text, print_num_words
+from stats import get_char_frequency, sort_dict, print_characters
 
 
 if __name__ == "__main__":
