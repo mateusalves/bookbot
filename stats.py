@@ -6,13 +6,13 @@ def get_char_frequency(file_contents):
             char_freq[char] += 1
         else:
             char_freq[char] = 1
-    print(char_freq)
+    return char_freq
 
 
 def get_num_words(file_contents):
     words = file_contents.split()
     num_words = len(words)
-    print(f"{num_words} words found in the document")
+    print(f"Found {num_words} total words")
 
 
 def get_book_text(file_path):
